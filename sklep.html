@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sklep z kosmetykami do paznokci i twarzy | Piwonia Beauty Studio</title>
+  <meta name="description" content="Kosmetyki, których używamy w studiu: lakiery hybrydowe, serum, kremy do rąk, maski i vouchery podarunkowe na zabiegi.">
+  <meta property="og:title" content="Sklep z kosmetykami do paznokci i twarzy | Piwonia Beauty Studio">
+  <meta property="og:description" content="Kosmetyki, których używamy w studiu: lakiery hybrydowe, serum, kremy do rąk, maski i vouchery podarunkowe na zabiegi.">
+  <meta property="og:image" content="https://marysiapieczyrak.github.io/projekt-rwd/img/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marysiapieczyrak.github.io/projekt-rwd/sklep.html">
+  <meta property="og:locale" content="pl_PL">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Sklep Piwonia Beauty Studio",
+    "description": "Kosmetyki do pielęgnacji paznokci, dłoni i twarzy oraz vouchery podarunkowe.",
+    "url": "https://marysiapieczyrak.github.io/projekt-rwd/sklep.html",
+    "inLanguage": "pl",
+    "publisher": {
+      "@type": "BeautySalon",
+      "@id": "https://marysiapieczyrak.github.io/projekt-rwd/#salon",
+      "name": "Piwonia Beauty Studio",
+      "url": "https://marysiapieczyrak.github.io/projekt-rwd/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-marka" aria-label="Menu główne">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.svg" width="40" height="40" class="me-2" alt="Logo Piwonia Beauty Studio – stylizowany kwiat piwonii">Piwonia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuGlowne" aria-controls="menuGlowne" aria-expanded="false" aria-label="Pokaż menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuGlowne">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="sklep.html">Sklep</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+            <li class="nav-item"><a class="nav-link" href="konto.html">Konto</a></li>
+            <li class="nav-item"><a class="nav-link" href="koszyk.html">Koszyk</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="breadcrumb-pasek">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="Okruszki">
+              <ol class="breadcrumb py-1">
+                <li class="breadcrumb-item"><a href="index.html">Start</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sklep</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="sekcja">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="naglowek-sekcji">Sklep</h1>
+            <p class="lead">Kosmetyki, z których korzystamy na co dzień w studiu, teraz także do Twojej łazienki.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <aside class="col-12 col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="h5 card-title">Filtry</h2>
+                <form action="sklep.html" method="get">
+                  <fieldset class="mb-3">
+                    <legend class="fs-6 fw-bold">Kategoria</legend>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="kategoria" value="lakiery" id="kat-lakiery">
+                      <label class="form-check-label" for="kat-lakiery">Lakiery</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="kategoria" value="twarz" id="kat-twarz">
+                      <label class="form-check-label" for="kat-twarz">Twarz</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="kategoria" value="dlonie" id="kat-dlonie">
+                      <label class="form-check-label" for="kat-dlonie">Dłonie</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="kategoria" value="vouchery" id="kat-vouchery">
+                      <label class="form-check-label" for="kat-vouchery">Vouchery</label>
+                    </div>
+                  </fieldset>
+                  <label for="cena" class="form-label fw-bold">Cena</label>
+                  <select id="cena" name="cena" class="form-select mb-3">
+                    <option value="">Dowolna</option>
+                    <option value="do50">do 50 zł</option>
+                    <option value="50-100">50–100 zł</option>
+                    <option value="od100">powyżej 100 zł</option>
+                  </select>
+                  <label for="sortuj" class="form-label fw-bold">Sortuj</label>
+                  <select id="sortuj" name="sortuj" class="form-select mb-3">
+                    <option value="popularne">Najpopularniejsze</option>
+                    <option value="cena-rosnaco">Cena rosnąco</option>
+                    <option value="cena-malejaco">Cena malejąco</option>
+                  </select>
+                  <button type="submit" class="btn btn-cta w-100">Pokaż produkty</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+          <div class="col-12 col-lg-9">
+            <div class="row g-4">
+              <div class="col-12 col-sm-6 col-xl-4">
+                <article class="card h-100">
+                  <img src="img/produkt-lakier.svg" class="card-img-top" width="800" height="800" alt="Butelka lakieru hybrydowego w kolorze malinowym">
+                  <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Lakier hybrydowy „Piwonia”</h2>
+                    <p class="card-text">15 ml, trwałość do 3 tygodni</p>
+                    <p class="cena mb-3">39,00 zł</p>
+                    <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Lakier hybrydowy „Piwonia”</span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-4">
+                <article class="card h-100">
+                  <img src="img/produkt-serum.svg" class="card-img-top" width="800" height="800" alt="Buteleczka serum z pipetą">
+                  <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Serum z kwasem hialuronowym</h2>
+                    <p class="card-text">30 ml, do każdego typu cery</p>
+                    <p class="cena mb-3">89,00 zł</p>
+                    <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Serum z kwasem hialuronowym</span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-4">
+                <article class="card h-100">
+                  <img src="img/produkt-krem.svg" class="card-img-top" width="800" height="800" alt="Słoiczek kremu do rąk">
+                  <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Krem do rąk z masłem shea</h2>
+                    <p class="card-text">75 ml, szybko się wchłania</p>
+                    <p class="cena mb-3">35,00 zł</p>
+                    <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Krem do rąk z masłem shea</span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-4">
+                <article class="card h-100">
+                  <img src="img/produkt-oliwka.svg" class="card-img-top" width="800" height="800" alt="Mała buteleczka oliwki do skórek">
+                  <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Oliwka do skórek z witaminą E</h2>
+                    <p class="card-text">10 ml, z pędzelkiem</p>
+                    <p class="cena mb-3">29,00 zł</p>
+                    <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Oliwka do skórek z witaminą E</span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-4">
+                <article class="card h-100">
+                  <img src="img/produkt-maska.svg" class="card-img-top" width="800" height="800" alt="Tubka maski nawilżającej">
+                  <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Maska nawilżająca w płachcie</h2>
+                    <p class="card-text">5 sztuk w opakowaniu</p>
+                    <p class="cena mb-3">49,00 zł</p>
+                    <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Maska nawilżająca w płachcie</span></a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-4">
+                <article class="card h-100">
+                  <img src="img/produkt-voucher.svg" class="card-img-top" width="800" height="800" alt="Voucher podarunkowy z kokardą">
+                  <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Voucher podarunkowy</h2>
+                    <p class="card-text">na dowolne zabiegi w studiu</p>
+                    <p class="cena mb-3">200,00 zł</p>
+                    <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Voucher podarunkowy</span></a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="stopka pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <p class="stopka-marka">Piwonia Beauty Studio</p>
+          <p>Manicure, pedicure i zabiegi na twarz w kameralnym studiu w centrum Krakowa.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <p class="stopka-naglowek">Na skróty</p>
+          <ul class="list-unstyled mb-0">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sklep.html">Sklep</a></li>
+            <li><a href="kontakt.html">Kontakt i dojazd</a></li>
+            <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <p class="stopka-naglowek">Kontakt</p>
+          <address class="mb-2">ul. Kwiatowa 12, 31-000 Kraków<br>
+            <a href="tel:+48120000000">+48 12 000 00 00</a><br>
+            <a class="text-break" href="mailto:kontakt@piwonia-studio.pl">kontakt@piwonia-studio.pl</a></address>
+          <p class="mb-0">Pon.–pt. 9:00–20:00, sob. 9:00–15:00</p>
+        </div>
+      </div>
+      <p class="stopka-prawa mt-4 mb-0">© 2026 Piwonia Beauty Studio · projekt zaliczeniowy RWD</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
