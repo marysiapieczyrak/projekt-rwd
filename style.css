@@ -6,7 +6,7 @@
   --kolor-pomocniczy: #F7E8EC;
   --kolor-cta: #A3264F;
   --kolor-tekst: #2A1E24;
-  --font-naglowki: "Playfair Display", Georgia, serif;
+  --font-naglowki: "Montserrat", "Segoe UI", Arial, sans-serif;
   --font-tekst: "Lato", "Segoe UI", Arial, sans-serif;
   --promien: 1rem;
 
@@ -24,16 +24,19 @@
 /* 2. Typografia i podstawy */
 body { font-family: var(--font-tekst); color: var(--kolor-tekst); line-height: 1.65; }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5 { font-family: var(--font-naglowki); color: var(--kolor-wiodacy); font-weight: 700; }
-h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h1, h1.naglowek-sekcji { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 300; letter-spacing: -.02em; line-height: 1.15; }
+h1 strong { font-weight: 800; color: var(--kolor-cta); }
+h3, h4, h5, .h4, .h5 { font-weight: 600; }
+.marka-cienka { font-weight: 300; font-size: .62em; text-transform: uppercase; letter-spacing: .2em; margin-left: .45rem; }
 legend.fs-6, .form-label, .card-title.h6, h3.h6 { font-family: var(--font-tekst); }
 .lead { font-size: 1.15rem; }
 address { font-style: normal; }
 .sekcja { padding-top: 3.5rem; padding-bottom: 3.5rem; }
 .sekcja-tlo { background: var(--kolor-pomocniczy); }
-.naglowek-sekcji { margin-bottom: 1.25rem; }
+.naglowek-sekcji { margin-bottom: 1.25rem; font-weight: 800; letter-spacing: -.01em; }
 .naglowek-sekcji::after { content: ""; display: block; width: 3.5rem; height: 3px; margin-top: .6rem; background: var(--kolor-cta); }
 .zdjecie-zaokraglone { border-radius: var(--promien); }
-.kategoria { display: inline-block; padding: .2rem .8rem; border-radius: 2rem; background: var(--kolor-pomocniczy); color: var(--kolor-wiodacy); font-size: .85rem; font-weight: 700; }
+.kategoria { display: inline-block; padding: .25rem .9rem; border-radius: 2rem; background: var(--kolor-pomocniczy); color: var(--kolor-wiodacy); font-family: var(--font-naglowki); font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; }
 .sekcja-tlo .kategoria, .hero .kategoria { background: #fff; }
 .meta-wpisu { font-size: .95rem; }
 
@@ -53,8 +56,8 @@ address { font-style: normal; }
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
 }
-.navbar-marka .navbar-brand { font-family: var(--font-naglowki); font-size: 1.6rem; font-weight: 700; }
-.navbar-marka .nav-link { font-weight: 700; padding-left: .9rem; padding-right: .9rem; }
+.navbar-marka .navbar-brand { font-family: var(--font-naglowki); font-size: 1.5rem; font-weight: 800; letter-spacing: -.02em; }
+.navbar-marka .nav-link { font-family: var(--font-naglowki); font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; padding-left: .9rem; padding-right: .9rem; }
 .navbar-marka .nav-link.active { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .45rem; }
 
 .btn-cta {
@@ -67,7 +70,7 @@ address { font-style: normal; }
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: var(--kolor-wiodacy);
   --bs-btn-active-border-color: var(--kolor-wiodacy);
-  border-radius: 2rem; padding: .6rem 1.6rem; font-weight: 700;
+  border-radius: 2rem; padding: .6rem 1.6rem;
 }
 .btn-obrys {
   --bs-btn-color: var(--kolor-wiodacy);
@@ -78,14 +81,16 @@ address { font-style: normal; }
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: var(--kolor-wiodacy);
   --bs-btn-active-border-color: var(--kolor-wiodacy);
-  border-width: 2px; border-radius: 2rem; padding: .55rem 1.5rem; font-weight: 700;
+  border-width: 2px; border-radius: 2rem; padding: .55rem 1.5rem;
 }
+.btn-cta, .btn-obrys { font-family: var(--font-naglowki); font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
+.btn-cta.btn-lg { font-size: 1rem; }
 
 .card { --bs-card-border-color: var(--kolor-pomocniczy); --bs-card-border-radius: var(--promien); box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .06); }
 .card-img-top { background: var(--kolor-pomocniczy); }
-.card .cena { color: var(--kolor-cta); font-size: 1.25rem; font-weight: 700; }
+.card .cena { color: var(--kolor-cta); font-family: var(--font-naglowki); font-size: 1.35rem; font-weight: 300; }
 .karta-uslugi { border-top: 4px solid var(--kolor-cta); }
-.usluga-cena { color: var(--kolor-cta); font-weight: 700; }
+.usluga-cena { color: var(--kolor-cta); font-family: var(--font-naglowki); font-weight: 800; }
 
 .pagination {
   --bs-pagination-color: var(--kolor-wiodacy);
@@ -130,16 +135,17 @@ address { font-style: normal; }
 .hero { background: var(--kolor-pomocniczy); padding-top: 3rem; padding-bottom: 3rem; }
 .lista-zalet { padding-left: 1.2rem; }
 .lista-zalet li::marker { color: var(--kolor-cta); }
-.cena-produktu { color: var(--kolor-cta); font-size: 2rem; font-weight: 700; }
+.cena-produktu { color: var(--kolor-cta); font-family: var(--font-naglowki); font-size: 2.6rem; font-weight: 200; letter-spacing: -.02em; }
 .mapa { border-radius: var(--promien); overflow: hidden; }
 .tekst-dlugi h2 { color: var(--kolor-wiodacy); }
 .strona-bledu { min-height: 60vh; }
 .logo-bledu { display: block; width: 100%; max-width: 260px; margin: 0 auto; }
-.kod-bledu { font-family: var(--font-naglowki); font-size: 5rem; line-height: 1; font-weight: 700; color: var(--kolor-cta); margin-bottom: .5rem; }
+.kod-bledu { font-family: var(--font-naglowki); font-size: 7rem; line-height: 1; font-weight: 200; color: var(--kolor-cta); margin-bottom: .5rem; }
 
 .stopka { background: var(--kolor-wiodacy); color: var(--kolor-pomocniczy); }
 .stopka a { color: var(--kolor-pomocniczy); }
 .stopka a:hover, .stopka a:focus { color: #fff; }
-.stopka-marka { font-family: var(--font-naglowki); font-size: 1.5rem; font-weight: 700; color: #fff; }
-.stopka-naglowek { font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .5rem; }
+.stopka-marka { font-family: var(--font-naglowki); font-size: 1.5rem; font-weight: 800; color: #fff; }
+.stopka-marka .marka-cienka { margin-left: 0; }
+.stopka-naglowek { font-family: var(--font-naglowki); font-size: .8rem; font-weight: 600; color: #fff; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .5rem; }
 .stopka-prawa { border-top: 1px solid var(--kolor-pomocniczy); padding-top: 1rem; font-size: .9rem; }

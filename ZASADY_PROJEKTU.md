@@ -5,7 +5,7 @@ Pracujesz nad istniejącym serwisem statycznym. Te zasady są stałe. Nie zmieni
 ## Marka (z karty projektu)
 - Nazwa: Piwonia Beauty Studio (salon: stylizacja paznokci i zabiegi na twarz, Kraków)
 - Kolory: wiodący #5B2346, pomocniczy #F7E8EC, CTA #A3264F, tekst #2A1E24
-- Kroje: nagłówki "Playfair Display", tekst "Lato" (Google Fonts)
+- Kroje: nagłówki "Montserrat" (grubości 200–800: cienkie tytuły, mocne wyróżnienia <strong>), tekst "Lato" (Google Fonts)
 - Język treści: polski. Ton: ciepły, rzeczowy, bez infantylizmów.
 
 ## Technologia
