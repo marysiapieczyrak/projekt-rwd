@@ -3,96 +3,313 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Festiwal Retrotechniki 2026 | Centrum Nowych Mediów</title>
-  <meta name="description" content="Dwa dni wykładów i warsztatów o dawnych komputerach, taśmach i archiwach cyfrowych.">
-  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <title>Piwonia Beauty Studio – manicure i zabiegi na twarz w Krakowie</title>
+  <meta name="description" content="Kameralne studio urody w Krakowie: manicure hybrydowy, pedicure SPA, oczyszczanie wodorowe i masaż Kobido. Umów wizytę online.">
+  <meta property="og:title" content="Piwonia Beauty Studio – manicure i zabiegi na twarz w Krakowie">
+  <meta property="og:description" content="Kameralne studio urody w Krakowie: manicure hybrydowy, pedicure SPA, oczyszczanie wodorowe i masaż Kobido. Umów wizytę online.">
+  <meta property="og:image" content="https://marysiapieczyrak.github.io/projekt-rwd/img/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marysiapieczyrak.github.io/projekt-rwd/index.html">
+  <meta property="og:locale" content="pl_PL">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Festiwal Retrotechniki 2026",
-    "startDate": "2026-11-28",
-    "location": { "@type": "Place", "name": "Centrum Nowych Mediów", "address": "ul. Przykładowa 1, Kraków" },
-    "organizer": { "@type": "Organization", "name": "Centrum Nowych Mediów" },
+    "@type": "BeautySalon",
+    "@id": "https://marysiapieczyrak.github.io/projekt-rwd/#salon",
+    "name": "Piwonia Beauty Studio",
+    "description": "Studio urody w Krakowie: stylizacja paznokci i zabiegi na twarz.",
+    "url": "https://marysiapieczyrak.github.io/projekt-rwd/",
+    "logo": "https://marysiapieczyrak.github.io/projekt-rwd/img/logo.svg",
+    "image": "https://marysiapieczyrak.github.io/projekt-rwd/img/og-image.png",
+    "telephone": "+48 12 000 00 00",
+    "email": "kontakt@piwonia-studio.pl",
+    "priceRange": "120–350 zł",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Kwiatowa 12",
+      "postalCode": "31-000",
+      "addressLocality": "Kraków",
+      "addressCountry": "PL"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "15:00"
+      }
+    ]
   }
   </script>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-marka" aria-label="Menu główne">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/logo.svg" width="40" height="40" class="me-2">Retrotechnika</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Pokaż menu">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.svg" width="40" height="40" class="me-2" alt="Logo Piwonia Beauty Studio – stylizowany kwiat piwonii">Piwonia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuGlowne" aria-controls="menuGlowne" aria-expanded="false" aria-label="Pokaż menu">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="menu">
+        <div class="collapse navbar-collapse" id="menuGlowne">
           <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
-          <li class="nav-item"><a class="nav-link" href="#prelegenci">Prelegenci</a></li>
-          <li class="nav-item"><a class="nav-link" href="#bilety">Bilety</a></li>
-          <li class="nav-item"><a class="nav-link" href="regulamin.hmtl">Regulamin</a></li>
-          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Start</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="sklep.html">Sklep</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+            <li class="nav-item"><a class="nav-link" href="konto.html">Konto</a></li>
+            <li class="nav-item"><a class="nav-link" href="koszyk.html">Koszyk</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <section class="hero container py-5">
-      <span class="plakietka">Nowość!</span>
-      <h1>Festiwal Retrotechniki i&nbsp;Przyszłości Danych</h1>
-      <p class="lead">Dwa dni wykładów i warsztatów o dawnych komputerach, taśmach i archiwach cyfrowych.</p>
-      <a href="#bilety" class="btn btn-warning btn-zapis" title="Zapisz się">✎</a>
-    </section>
-    <section class="container">
-      <div class="baner-partnerzy">Partnerzy: Muzeum Komputerów · Archiwum Cyfrowe · Radio Retro · Fundacja Taśma</div>
-    </section>
-    <section id="program" class="container py-4">
-      <h2>Program</h2>
-      <ul>
-        <li>10:00 Jak czytać taśmy magnetyczne po 40 latach</li>
-        <li>11:30 Emulacja zamiast muzeum: ratowanie starych gier</li>
-        <li>14:00 Warsztat: digitalizacja dyskietek</li>
-      </ul>
-      <img src="img/sala.svg" class="img-fluid rounded" width="300" height="200" alt="Sala główna Centrum podczas warsztatów">
-      <img src="img/plakat-2026.jpg" class="img-fluid" alt="Materiał informacyjny festiwalu">
-    </section>
-    <section id="prelegenci" class="container py-4">
-      <h2>Prelegenci</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-4">
-          <img src="img/prelegent1.svg" class="img-fluid rounded" width="300" height="200">
-          <h3 class="h5 mt-2">Dr Anna Wiśniewska</h3>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src="img/prelegent2.svg" class="img-fluid rounded" width="300" height="200" alt="Prof. Jan Malec z taśmą magnetyczną">
-          <h3 class="h5 mt-2">Prof. Jan Malec</h3>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src="img/prelegent3.svg" class="img-fluid rounded" width="300" height="200" alt="Inż. Ewa Sobczak przy serwerze">
-          <h3 class="h5 mt-2">Inż. Ewa Sobczak</h3>
+    <section class="hero">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-6">
+            <p class="kategoria mb-3">Paznokcie · Twarz · Pielęgnacja</p>
+            <h1>Piękne dłonie i promienna cera w&nbsp;sercu Krakowa</h1>
+            <p class="lead">W Piwonii łączymy staranną stylizację paznokci z zabiegami na twarz, które naprawdę działają. Bez pośpiechu, z kawą i dobrą rozmową.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="kontakt.html" class="btn btn-cta">Umów wizytę</a>
+              <a href="sklep.html" class="btn btn-obrys">Kosmetyki do domu</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img src="img/hero.svg" class="img-fluid zdjecie-zaokraglone" width="1200" height="800" alt="Malinowy lakier do paznokci, serum z pipetą i różowa piwonia">
+          </div>
         </div>
       </div>
     </section>
-    <section id="bilety" class="container py-4">
-      <h2>Bilety</h2>
-      <form>
-        <input type="email" class="form-control mb-2" placeholder="Twój e-mail">
-        <button type="submit" class="btn btn-primary">Zapisz mnie</button>
-      </form>
+    <section class="sekcja">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-md-6 order-md-2">
+            <h2 class="naglowek-sekcji">O nas</h2>
+            <p>Piwonia to kameralne studio prowadzone przez dyplomowane stylistki paznokci i kosmetolożki. Pracujemy na sprawdzonych kosmetykach, a narzędzia sterylizujemy w autoklawie po każdej klientce.</p>
+            <p>Każdą wizytę zaczynamy od krótkiej konsultacji: pytamy o Twoje potrzeby, styl życia i to, jak dbasz o siebie w domu.</p>
+            <ul class="lista-zalet">
+              <li>8 lat doświadczenia w stylizacji paznokci</li>
+              <li>Zabiegi na twarz dobierane po konsultacji</li>
+              <li>Sterylne narzędzia i jednorazowe pilniki</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+            <img src="img/o-nas.svg" class="img-fluid zdjecie-zaokraglone" width="1200" height="800" alt="Wnętrze studia Piwonia: fotel kosmetyczny, lustro w łuku i roślina">
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="regulamin" class="container py-4">
-      <h2>Regulamin</h2>
-      <p>Udział w wydarzeniu jest bezpłatny po rejestracji.</p>
+    <section class="sekcja sekcja-tlo">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="naglowek-sekcji">Oferta</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 karta-uslugi">
+              <div class="card-body">
+                <h3 class="h5 card-title">Manicure hybrydowy</h3>
+                <p class="card-text">Opracowanie skórek, kształt i kolor, który trzyma się do trzech tygodni.</p>
+                <p class="mb-0"><span class="usluga-cena">od 120 zł</span> · ok. 75 min</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 karta-uslugi">
+              <div class="card-body">
+                <h3 class="h5 card-title">Pedicure SPA</h3>
+                <p class="card-text">Kąpiel stóp, peeling, opracowanie paznokci i masaż z olejkiem.</p>
+                <p class="mb-0"><span class="usluga-cena">od 160 zł</span> · ok. 90 min</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 karta-uslugi">
+              <div class="card-body">
+                <h3 class="h5 card-title">Przedłużanie paznokci żelem</h3>
+                <p class="card-text">Naturalny kształt i wzmocnienie płytki, także z ozdobami.</p>
+                <p class="mb-0"><span class="usluga-cena">od 200 zł</span> · ok. 120 min</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 karta-uslugi">
+              <div class="card-body">
+                <h3 class="h5 card-title">Oczyszczanie wodorowe</h3>
+                <p class="card-text">Głębokie oczyszczenie i nawilżenie skóry bez podrażnień.</p>
+                <p class="mb-0"><span class="usluga-cena">od 180 zł</span> · ok. 60 min</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 karta-uslugi">
+              <div class="card-body">
+                <h3 class="h5 card-title">Masaż twarzy Kobido</h3>
+                <p class="card-text">Japoński masaż liftingujący, który rozluźnia i ujędrnia.</p>
+                <p class="mb-0"><span class="usluga-cena">od 220 zł</span> · ok. 70 min</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 karta-uslugi">
+              <div class="card-body">
+                <h3 class="h5 card-title">Mezoterapia mikroigłowa</h3>
+                <p class="card-text">Zabieg pobudzający skórę do odnowy, w serii od 3 wizyt.</p>
+                <p class="mb-0"><span class="usluga-cena">od 350 zł</span> · ok. 60 min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-4">
+            <a href="kontakt.html" class="btn btn-cta">Zarezerwuj termin</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sekcja">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="naglowek-sekcji">Z bloga</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <img src="img/blog-1.svg" class="card-img-top" width="1200" height="800" alt="Dłoń z pomalowanymi paznokciami">
+              <div class="card-body d-flex flex-column">
+                <p class="mb-2"><span class="kategoria">Paznokcie</span> <time class="meta-wpisu" datetime="2026-11-18">18 listopada 2026</time></p>
+                <h3 class="h5 card-title">Jak przygotować paznokcie do manicure hybrydowego</h3>
+                <p class="card-text">Co zrobić przed wizytą, żeby hybryda trzymała się trzy tygodnie i nie odpryskiwała przy skórkach.</p>
+                <a href="single.html" class="btn btn-obrys mt-auto align-self-start">Czytaj wpis<span class="visually-hidden">: Jak przygotować paznokcie do manicure hybrydowego</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <img src="img/blog-2.svg" class="card-img-top" width="1200" height="800" alt="Kropla wody i liść na tle piany">
+              <div class="card-body d-flex flex-column">
+                <p class="mb-2"><span class="kategoria">Twarz</span> <time class="meta-wpisu" datetime="2026-11-10">10 listopada 2026</time></p>
+                <h3 class="h5 card-title">Oczyszczanie wodorowe: dla kogo i jak często</h3>
+                <p class="card-text">Wyjaśniamy, jak działa zabieg, czego się spodziewać i ile wizyt warto zaplanować w serii.</p>
+                <a href="single.html" class="btn btn-obrys mt-auto align-self-start">Czytaj wpis<span class="visually-hidden">: Oczyszczanie wodorowe: dla kogo i jak często</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <img src="img/blog-3.svg" class="card-img-top" width="1200" height="800" alt="Dłonie w rękawiczkach z kremem">
+              <div class="card-body d-flex flex-column">
+                <p class="mb-2"><span class="kategoria">Pielęgnacja</span> <time class="meta-wpisu" datetime="2026-11-03">3 listopada 2026</time></p>
+                <h3 class="h5 card-title">Zimowa pielęgnacja dłoni w pięciu krokach</h3>
+                <p class="card-text">Mróz i ogrzewanie wysuszają skórę. Pięć prostych nawyków, które pomogą Twoim dłoniom przetrwać zimę.</p>
+                <a href="single.html" class="btn btn-obrys mt-auto align-self-start">Czytaj wpis<span class="visually-hidden">: Zimowa pielęgnacja dłoni w pięciu krokach</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mt-4">
+            <a href="blog.html" class="btn btn-obrys">Wszystkie wpisy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sekcja sekcja-tlo">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="naglowek-sekcji">Wyróżnione produkty</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <img src="img/produkt-lakier.svg" class="card-img-top" width="800" height="800" alt="Butelka lakieru hybrydowego w kolorze malinowym">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Lakier hybrydowy „Piwonia”</h3>
+                <p class="card-text">15 ml, trwałość do 3 tygodni</p>
+                <p class="cena mb-3">39,00 zł</p>
+                <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Lakier hybrydowy „Piwonia”</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <img src="img/produkt-serum.svg" class="card-img-top" width="800" height="800" alt="Buteleczka serum z pipetą">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Serum z kwasem hialuronowym</h3>
+                <p class="card-text">30 ml, do każdego typu cery</p>
+                <p class="cena mb-3">89,00 zł</p>
+                <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Serum z kwasem hialuronowym</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <img src="img/produkt-krem.svg" class="card-img-top" width="800" height="800" alt="Słoiczek kremu do rąk">
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5 card-title">Krem do rąk z masłem shea</h3>
+                <p class="card-text">75 ml, szybko się wchłania</p>
+                <p class="cena mb-3">35,00 zł</p>
+                <a href="produkt.html" class="btn btn-cta mt-auto align-self-start">Zobacz produkt<span class="visually-hidden">: Krem do rąk z masłem shea</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer id="kontakt" class="stopka py-4">
+  <footer class="stopka pt-5 pb-3">
     <div class="container">
-      <p>Centrum Nowych Mediów, ul. Przykładowa 1, Kraków · kontakt@przyklad.pl</p>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <p class="stopka-marka">Piwonia Beauty Studio</p>
+          <p>Manicure, pedicure i zabiegi na twarz w kameralnym studiu w centrum Krakowa.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <p class="stopka-naglowek">Na skróty</p>
+          <ul class="list-unstyled mb-0">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sklep.html">Sklep</a></li>
+            <li><a href="kontakt.html">Kontakt i dojazd</a></li>
+            <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <p class="stopka-naglowek">Kontakt</p>
+          <address class="mb-2">ul. Kwiatowa 12, 31-000 Kraków<br>
+            <a href="tel:+48120000000">+48 12 000 00 00</a><br>
+            <a class="text-break" href="mailto:kontakt@piwonia-studio.pl">kontakt@piwonia-studio.pl</a></address>
+          <p class="mb-0">Pon.–pt. 9:00–20:00, sob. 9:00–15:00</p>
+        </div>
+      </div>
+      <p class="stopka-prawa mt-4 mb-0">© 2026 Piwonia Beauty Studio · projekt zaliczeniowy RWD</p>
     </div>
   </footer>
-  <script src="vendor/bootstrap.bundle.min.js"></script>
-  <script src="skrypt.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,9 +1,145 @@
-@font-face { font-family: "Playfair Display"; src: url("fonts/playfair-display-700.woff2") format("woff2"); font-weight: 700; }
-:root { --font-naglowki: "Playfair Display", Georgia, serif; }
-h1, h2 { font-family: var(--font-naglowki); }
-.hero { position: relative; }
-.plakietka { position: absolute; top: 3.3rem; left: 8rem; background: #d62828; color: #fff; padding: .4rem .8rem; font-weight: 700; border-radius: .3rem; }
-@media (min-width: 768px) { .plakietka { top: .5rem; left: auto; right: 1rem; } }
-.btn-zapis { display: inline-block; box-sizing: border-box; width: 36px; height: 28px; padding: 0; line-height: 28px; }
-.baner-partnerzy { box-sizing: border-box; width: 520px; background: #f1faee; border: 1px solid #a8dadc; padding: 1rem; }
-.stopka { background: #ffffff; color: #9e9e9e; }
+/* Piwonia Beauty Studio – jedyny arkusz własnych stylów */
+
+/* 1. Zmienne marki: kolory i kroje tylko tutaj */
+:root {
+  --kolor-wiodacy: #5B2346;
+  --kolor-pomocniczy: #F7E8EC;
+  --kolor-cta: #A3264F;
+  --kolor-tekst: #2A1E24;
+  --font-naglowki: "Playfair Display", Georgia, serif;
+  --font-tekst: "Lato", "Segoe UI", Arial, sans-serif;
+  --promien: 1rem;
+
+  /* Bootstrap dostaje kolory i kroje marki */
+  --bs-body-font-family: var(--font-tekst);
+  --bs-body-color: var(--kolor-tekst);
+  --bs-heading-color: var(--kolor-wiodacy);
+  --bs-secondary-color: var(--kolor-tekst);
+  --bs-link-color: var(--kolor-cta);
+  --bs-link-color-rgb: 163, 38, 79;
+  --bs-link-hover-color: var(--kolor-wiodacy);
+  --bs-link-hover-color-rgb: 91, 35, 70;
+}
+
+/* 2. Typografia i podstawy */
+body { font-family: var(--font-tekst); color: var(--kolor-tekst); line-height: 1.65; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5 { font-family: var(--font-naglowki); color: var(--kolor-wiodacy); font-weight: 700; }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+legend.fs-6, .form-label, .card-title.h6, h3.h6 { font-family: var(--font-tekst); }
+.lead { font-size: 1.15rem; }
+address { font-style: normal; }
+.sekcja { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+.sekcja-tlo { background: var(--kolor-pomocniczy); }
+.naglowek-sekcji { margin-bottom: 1.25rem; }
+.naglowek-sekcji::after { content: ""; display: block; width: 3.5rem; height: 3px; margin-top: .6rem; background: var(--kolor-cta); }
+.zdjecie-zaokraglone { border-radius: var(--promien); }
+.kategoria { display: inline-block; padding: .2rem .8rem; border-radius: 2rem; background: var(--kolor-pomocniczy); color: var(--kolor-wiodacy); font-size: .85rem; font-weight: 700; }
+.sekcja-tlo .kategoria, .hero .kategoria { background: #fff; }
+.meta-wpisu { font-size: .95rem; }
+
+/* 3. Obszar dotyku: przyciski, linki menu i paginacja min. 44 × 44 px */
+.btn, .page-link, .navbar-toggler { min-width: 44px; min-height: 44px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; }
+.page-link { display: flex; align-items: center; justify-content: center; }
+.navbar .nav-link, .navbar-brand { display: flex; align-items: center; min-height: 44px; }
+.stopka a, .breadcrumb a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* 4. Komponenty Bootstrapa w stylu marki */
+.navbar-marka {
+  background: var(--kolor-wiodacy);
+  --bs-navbar-color: var(--kolor-pomocniczy);
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-hover-color: #fff;
+}
+.navbar-marka .navbar-brand { font-family: var(--font-naglowki); font-size: 1.6rem; font-weight: 700; }
+.navbar-marka .nav-link { font-weight: 700; padding-left: .9rem; padding-right: .9rem; }
+.navbar-marka .nav-link.active { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .45rem; }
+
+.btn-cta {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--kolor-cta);
+  --bs-btn-border-color: var(--kolor-cta);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--kolor-wiodacy);
+  --bs-btn-hover-border-color: var(--kolor-wiodacy);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--kolor-wiodacy);
+  --bs-btn-active-border-color: var(--kolor-wiodacy);
+  border-radius: 2rem; padding: .6rem 1.6rem; font-weight: 700;
+}
+.btn-obrys {
+  --bs-btn-color: var(--kolor-wiodacy);
+  --bs-btn-border-color: var(--kolor-wiodacy);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--kolor-wiodacy);
+  --bs-btn-hover-border-color: var(--kolor-wiodacy);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--kolor-wiodacy);
+  --bs-btn-active-border-color: var(--kolor-wiodacy);
+  border-width: 2px; border-radius: 2rem; padding: .55rem 1.5rem; font-weight: 700;
+}
+
+.card { --bs-card-border-color: var(--kolor-pomocniczy); --bs-card-border-radius: var(--promien); box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .06); }
+.card-img-top { background: var(--kolor-pomocniczy); }
+.card .cena { color: var(--kolor-cta); font-size: 1.25rem; font-weight: 700; }
+.karta-uslugi { border-top: 4px solid var(--kolor-cta); }
+.usluga-cena { color: var(--kolor-cta); font-weight: 700; }
+
+.pagination {
+  --bs-pagination-color: var(--kolor-wiodacy);
+  --bs-pagination-hover-color: var(--kolor-wiodacy);
+  --bs-pagination-hover-bg: var(--kolor-pomocniczy);
+  --bs-pagination-focus-color: var(--kolor-wiodacy);
+  --bs-pagination-focus-bg: var(--kolor-pomocniczy);
+  --bs-pagination-active-bg: var(--kolor-wiodacy);
+  --bs-pagination-active-border-color: var(--kolor-wiodacy);
+  --bs-pagination-disabled-color: var(--kolor-tekst);
+  --bs-pagination-disabled-bg: var(--kolor-pomocniczy);
+  --bs-pagination-border-radius: 2rem;
+  gap: .3rem;
+}
+
+.breadcrumb-pasek { background: var(--kolor-pomocniczy); }
+.breadcrumb { --bs-breadcrumb-divider-color: var(--kolor-tekst); --bs-breadcrumb-item-active-color: var(--kolor-tekst); margin-bottom: 0; }
+.breadcrumb a { color: var(--kolor-wiodacy); font-weight: 700; }
+.breadcrumb-item { display: flex; align-items: center; }
+
+.form-control, .form-select { border-radius: .75rem; border-color: var(--kolor-wiodacy); }
+.form-control:focus, .form-select:focus { border-color: var(--kolor-cta); box-shadow: 0 0 0 .25rem var(--kolor-pomocniczy); }
+.form-check-input:checked { background-color: var(--kolor-cta); border-color: var(--kolor-cta); }
+.pole-ilosc { max-width: 8rem; }
+
+.list-group {
+  --bs-list-group-color: var(--kolor-tekst);
+  --bs-list-group-action-color: var(--kolor-tekst);
+  --bs-list-group-action-hover-color: var(--kolor-wiodacy);
+  --bs-list-group-action-hover-bg: var(--kolor-pomocniczy);
+  --bs-list-group-active-bg: var(--kolor-wiodacy);
+  --bs-list-group-active-border-color: var(--kolor-wiodacy);
+}
+
+.table { --bs-table-striped-bg: var(--kolor-pomocniczy); --bs-table-striped-color: var(--kolor-tekst); }
+.table thead th { --bs-table-bg: var(--kolor-wiodacy); --bs-table-color: #fff; font-weight: 700; }
+.table caption { color: var(--kolor-tekst); }
+.badge-status { background: var(--kolor-wiodacy); color: #fff; }
+.badge-status-cta { background: var(--kolor-cta); color: #fff; }
+
+/* 5. Sekcje stron */
+.hero { background: var(--kolor-pomocniczy); padding-top: 3rem; padding-bottom: 3rem; }
+.lista-zalet { padding-left: 1.2rem; }
+.lista-zalet li::marker { color: var(--kolor-cta); }
+.cena-produktu { color: var(--kolor-cta); font-size: 2rem; font-weight: 700; }
+.mapa { border-radius: var(--promien); overflow: hidden; }
+.tekst-dlugi h2 { color: var(--kolor-wiodacy); }
+.strona-bledu { min-height: 60vh; }
+.logo-bledu { display: block; width: 100%; max-width: 260px; margin: 0 auto; }
+.kod-bledu { font-family: var(--font-naglowki); font-size: 5rem; line-height: 1; font-weight: 700; color: var(--kolor-cta); margin-bottom: .5rem; }
+
+.stopka { background: var(--kolor-wiodacy); color: var(--kolor-pomocniczy); }
+.stopka a { color: var(--kolor-pomocniczy); }
+.stopka a:hover, .stopka a:focus { color: #fff; }
+.stopka-marka { font-family: var(--font-naglowki); font-size: 1.5rem; font-weight: 700; color: #fff; }
+.stopka-naglowek { font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: .06em; margin-bottom: .5rem; }
+.stopka-prawa { border-top: 1px solid var(--kolor-pomocniczy); padding-top: 1rem; font-size: .9rem; }
